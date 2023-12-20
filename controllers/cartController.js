@@ -40,9 +40,11 @@ module.exports.addItemToCart = async (req, res)=>{
             })
         }
         let newCartItem = await Cart.create({
+            name: req.body.name,
             product_id: req.body.id,
             quantity: 1,
-            price: req.body.price
+            price: req.body.price,
+            unitPrice: req.body.price
         })
 
         return res.status(200).json({

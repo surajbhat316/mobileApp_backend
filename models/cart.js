@@ -7,11 +7,19 @@ const cartSchema = new mongoose.Schema({
         ref: "Mobiles",
         required: true
     },
+    name: {
+        type: String,
+        required: true
+    },
     quantity: {
         type: Number,
         required: true
     },
     price: {
+        type: Number,
+        required: true
+    },
+    unitPrice: {
         type: Number,
         required: true
     }
