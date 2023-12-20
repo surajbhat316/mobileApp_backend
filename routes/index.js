@@ -10,5 +10,7 @@ router.use("/mobiles", require("./mobile"));
 
 router.use("/cart", require("./cart"));
 
+router.use("/order", require("./order"));
+
 
 module.exports = router;
